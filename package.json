@@ -1,0 +1,36 @@
+{
+  "name": "live-school-system",
+  "displayName": "Live School System",
+  "description": "A live operating school system dashboard built as a VS Code extension.",
+  "version": "0.1.0",
+  "publisher": "manucho647400",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:liveSchoolSystem.openDashboard"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "liveSchoolSystem.openDashboard",
+        "title": "Open Live School System Dashboard",
+        "category": "School"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "@types/vscode": "^1.95.0",
+    "typescript": "^5.4.5"
+  }
+}
